@@ -1,10 +1,17 @@
-# Caminho para as pastas de treino e validação
-train: ./dataset/images/train/
-val: ./dataset/images/val/
+# Caminhos para os dados de treino e validação
+path: /home/fifo/Área de trabalho/projeto_agromerica/dataset/agro_junta
+train: /home/fifo/Área de trabalho/projeto_agromerica/dataset/agro_junta/images/train
+val: /home/fifo/Área de trabalho/projeto_agromerica/dataset/agro_junta/images/val
 
-# Número de classes (ajuste para o seu caso)
-nc: 3
+# Opcional: Define um caminho base para os caminhos acima, se forem relativos a ele.
+# Note que há um ponto a mais no seu caminho original ".dataset/", corrigi para "./dataset/".
+# Se os caminhos 'train' e 'val' já são completos, esta linha 'path' não é necessária.
 
-# Nomes das classes (na mesma ordem dos IDs: 0, 1, 2...)
-# EDITE ESTA LINHA COM OS NOMES DAS SUAS PEÇAS
-names: ['parafuso', 'porca', 'arruela']
+
+# Número de classes
+nc: 2
+
+# Nomes das classes (em formato de lista)
+names:
+  - indefinido
+  - junta_cria

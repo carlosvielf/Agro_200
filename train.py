@@ -1,15 +1,15 @@
 from ultralytics import YOLO
 
 def main():
- 
+    # Carrega o modelo base YOLOv8 nano
     model = YOLO('yolov8n.pt')
 
     print("Iniciando o treinamento do modelo...")
     results = model.train(
         data='data.yaml',
         epochs=50,
-        imgsz=640,
-        device='cpu'
+        device=0,
+        cache=True  # Ativa o cache de imagens/anotações para acelerar o treinamento
     )
 
     print("Treinamento concluído com sucesso!")
