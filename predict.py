@@ -7,10 +7,10 @@ def main():
     Script para fazer predições em uma nova imagem usando um modelo YOLOv8 treinado.
     """
     # Caminho para o modelo treinado
-    model_path = 'runs/detect/train/weights/best.pt'
+    model_path = 'Reconhecimento_IA/Models/agromerica_train/weights/best.pt'
 
     # Caminho da imagem para predição (ajuste conforme necessário)
-    image_to_predict = 'dataset/frame_00036.jpg'
+    image_to_predict = 'Reconhecimento_IA/images_test/mesa.jpg'
 
     if not os.path.exists(model_path):
         print(f"Erro: Arquivo do modelo não encontrado em '{model_path}'")

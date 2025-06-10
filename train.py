@@ -1,20 +1,7 @@
 from ultralytics import YOLO
 
-def main():
-    # Carrega o modelo base YOLOv8 nano
-    model = YOLO('yolov8n.pt')
+    
+model = YOLO('yolo11n.pt')
 
-    print("Iniciando o treinamento do modelo...")
-    results = model.train(
-        data='data.yaml',
-        epochs=50,
-        device=0,
-        cache=True  # Ativa o cache de imagens/anotações para acelerar o treinamento
-    )
 
-    print("Treinamento concluído com sucesso!")
-    print(f"O melhor modelo foi salvo no diretório: {results.save_dir}")
-    print("Você pode encontrar o modelo em 'runs/detect/train/weights/best.pt'")
-
-if __name__ == '__main__':
-    main()
+results = model.train(data='/home/carlos/workspace/synapse/agromerica/Reconhecimento_IA/dataset/data.yaml',epochs=200,device=0, batch=8, project = '/home/carlos/workspace/synapse/agromerica/Reconhecimento_IA/Models',name='agromerica_train')
