@@ -1,8 +1,8 @@
 import os
 
 # Caminhos das subpastas
-path_images = os.path.join('/home/carlos/workspace/synapse/agromerica/Reconhecimento_IA/dataset/agro_junta/images/val')
-path_labels = os.path.join('/home/carlos/workspace/synapse/agromerica/Reconhecimento_IA/dataset/agro_junta/labels/val')
+path_images = os.path.join('/home/fifo/Área de trabalho/projeto_agromerica/Reconhecimento_IA/agro_junta/images/val')
+path_labels = os.path.join('/home/fifo/Área de trabalho/projeto_agromerica/Reconhecimento_IA/agro_junta/labels/val')
 
 # Obtem os nomes dos arquivos sem extensão
 image_files = {os.path.splitext(f)[0] for f in os.listdir(path_images) if f.endswith('.jpg')}

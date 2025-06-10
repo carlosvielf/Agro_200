@@ -1,5 +1,5 @@
 # Caminhos para os dados de treino e validação
-path: /home/carlos/workspace/synapse/agromerica/Reconhecimento_IA/dataset
+path: /home/fifo/Área de trabalho/projeto_agromerica/Reconhecimento_IA/dataset
 train: images/train
 val: images/val
 nc: 2  # número de classes
