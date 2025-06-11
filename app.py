@@ -31,7 +31,7 @@ def load_model(model_path):
     return model
 
 # --- INTERFACE PRINCIPAL ---
-st.title(" Reconhecimento de peças - Agromérica")
+st.title(" 👨‍🌾🚜 Reconhecimento de peças - Agromérica 🚜👨‍🌾")
 st.markdown("Faça o upload de uma imagem e o modelo treinado fará a detecção dos objetos.")
 
 model_path = '/home/fifo/Área de trabalho/projeto_agromerica/Reconhecimento_IA/Models/agromerica_train3/weights/best.pt'
